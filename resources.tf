@@ -44,7 +44,7 @@ resource "aws_instance" "main" {
 
   user_data_replace_on_change = true
 
-  user_data = templatefile("./templates/userdata.sh", {playbook_repository = var.playbook_repository })
+  user_data = templatefile("./templates/userdata.sh", { playbook_repository = var.playbook_repository })
 
 }
 
